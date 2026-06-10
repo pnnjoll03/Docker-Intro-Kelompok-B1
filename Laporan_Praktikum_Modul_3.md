@@ -31,7 +31,7 @@ Apa keuntungan menjalankan web server di container dibandingkan langsung di host
 
 Jelaskan perbedaan document root Apache (/usr/loca/apache2/htdocs/) vs Nginx (/usr/share/nginx/html/)
 
-Document Root adalah direktori utama di dalam server tempat fileâ€ website (seperti index.html) disimpan
+Document Root adalah direktori utama di dalam server tempat fileâ€ website (seperti index.html) disimpan
 
 - Apache defaultnya disimpan di /usr/local/apache2/htdocs/
 - Nginx defaultnya disimpan di /usr/share/nginx/html/
@@ -142,9 +142,9 @@ Tunjukkan bahwa X-Real-IP header diteruskan dengan benar dari Nginx ke Flask
 
 Jelaskan mengapa Flask app perlu terhubung ke dua network (web-net dan db-net).
 
-- Web-net: digunakan agar Nginx (Proxy) bisa berkomunikasi dengan Flask. Network ini â€œterbukaâ€ ke arah luar.
+- Web-net: digunakan agar Nginx (Proxy) bisa berkomunikasi dengan Flask. Network ini â€œterbukaâ€ ke arah luar.
 - Db-net: digunakan agar Flask bisa berkomunikasi dengan Database.
-- Database tidak boleh terhubung ke web-net. Dengan begitu, jika Nginx diretas, peretas tidak bisa langsung â€œmelihatâ€ atau menyerang Database karena mereke berada di network yang berbeda. Flask bertindak sebagai jembatan yang aman.
+- Database tidak boleh terhubung ke web-net. Dengan begitu, jika Nginx diretas, peretas tidak bisa langsung â€œmelihatâ€ atau menyerang Database karena mereke berada di network yang berbeda. Flask bertindak sebagai jembatan yang aman.
 
 ### Soal 5
 
